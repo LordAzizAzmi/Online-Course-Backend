@@ -40,7 +40,11 @@ exports.findAllCourse = (req, res) => {
             res.status(200).send({
                 status: true,
                 message: 'Data found',
-                data: result
+                data: {
+                    courses: [
+                        result
+                    ]
+                }
             })
         })
         .catch(err => {

@@ -1,6 +1,6 @@
 module.exports = mongoose => {
     const schema = mongoose.Schema({
-        packet_id: Number,
+        packet_id: String,
         packet_name: String,
         packet_price: Number,
         schedule: String,

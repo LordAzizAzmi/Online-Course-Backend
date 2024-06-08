@@ -5,6 +5,7 @@ module.exports = mongoose => {
         username: String,
         phone: String,
         password: String,
+        packet: [String],
     })
 
     schema.method("toJSON", function() {
@@ -18,7 +19,8 @@ module.exports = mongoose => {
     // const user = new User({
     //     username: "admin",
     //     phone: "084578869212",
-    //     password: bcrypt.hashSync("admin", 10)
+    //     password: bcrypt.hashSync("admin", 10),
+    //     packet: ["1", "2"],
     // })
 
     // user.save(User)
